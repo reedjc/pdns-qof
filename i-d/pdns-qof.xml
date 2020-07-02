@@ -227,7 +227,7 @@ ws              = *(
 		<section title="Optional Fields">
 			<t>Implementations SHOULD support one or more fields.</t>
 			<section title="count">
-			<t>Specifies how many authoritative DNS answers were received at the Passive DNS Server's collectors with exactly the given set of values as answers (i.e. same data in the answer set - compare with the uniqueness property in "Mandatory Fields"). The number of requests is expressed as a decimal value. This field is represented as a <xref target="RFC4627">JSON</xref> number.</t>
+			<t>Specifies how many authoritative DNS answers were received at the Passive DNS Server's collectors with exactly the given set of values as answers (i.e. same data in the answer set &mdash; compare with the uniqueness property in "Mandatory Fields"). The number of requests is expressed as a decimal value. This field is represented as a <xref target="RFC4627">JSON</xref> number.</t>
 			</section>
 			<section title="bailiwick">
 				<t>The bailiwick is the best estimate of the apex of the zone where this data is authoritative. The value is represented as a JSON [RFC4627] string.</t>
@@ -283,7 +283,7 @@ ws              = *(
     </section>
 
 	<section anchor="Privacy" title="Privacy Considerations">
-		<t>Passive DNS Servers capture DNS answers from multiple collecting points ("sensors") which are located on the Internet-facing side of DNS recursors ("post-recursor passive DNS"). In this process, they intentionally omit the source IP, source port, destination IP and destination port from the captured packets. Since the data is captured "post-recursor", the timing information (who queries what) is lost, since the recursor will cache the results. Furthermore, since multiple sensors feed into a passive DNS server, the resulting data gets mixed together, reducing the likelihood that Passive DNS Servers are able to find out much about the actual person querying the DNS records nor who actually sent the query. In this sense, passive DNS Servers are similar to keeping an archive of all previous phone books - if public DNS records can be compared to phone numbers - as they often are.
+		<t>Passive DNS Servers capture DNS answers from multiple collecting points ("sensors") which are located on the Internet-facing side of DNS recursors ("post-recursor passive DNS"). In this process, they intentionally omit the source IP, source port, destination IP and destination port from the captured packets. Since the data is captured "post-recursor", the timing information (who queries what) is lost, since the recursor will cache the results. Furthermore, since multiple sensors feed into a passive DNS server, the resulting data gets mixed together, reducing the likelihood that Passive DNS Servers are able to find out much about the actual person querying the DNS records nor who actually sent the query. In this sense, passive DNS Servers are similar to keeping an archive of all previous phone books &mdash; if public DNS records can be compared to phone numbers &mdash; as they often are.
 
 		Nevertheless, the authors strongly encourage Passive DNS implementors to take special care of privacy issues. bortzmeyer-dnsop-dns-privacy is an excellent starting point for this.
         Finally, the overall recommendations in <xref target="RFC6973">RFC6973</xref> should be taken into consideration when designing any application which uses Passive DNS data.</t>
