@@ -362,7 +362,7 @@ ws              = *(
         <reference anchor="DNSDB" target="https://api.dnsdb.info/">
           <front>
            <title>DNSDB API</title>
-           <author fullname="Farsight Security"/>
+           <author><organization>Farsight Security</organization></author>
            <date year="2013"/>
           </front>
         </reference>
