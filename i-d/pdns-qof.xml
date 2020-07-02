@@ -149,7 +149,8 @@
 
 	As the format and the meaning of output fields from each Passive DNS need to be consistent, we propose in this document a solution to commonly name each field along with their corresponding interpretation. The format follows a simple key-value structure in <xref target="RFC4627">JSON</xref> format.
 The benefit of having a consistent Passive DNS output format is that multiple client implementations can query different servers without having to have a separate parser for each
-individual server. <xref target="PDNSCLIENT">passivedns-client</xref> currently implements multiple parsers due to a lack of standardization.
+individual server.
+For example, the <xref target="PDNSCLIENT">passivedns-client</xref> library and tool and the <xref target="DNSDBQ">dnsdbq</xref> tool currently implement multiple parsers due to a lack of standardization.
 
 The document does not describe the protocol (e.g. <xref target="RFC3912">WHOIS</xref>, HTTP <xref target="REST">REST</xref>) nor the query format used to query the Passive DNS. Neither does this document describe "pre-recursor" Passive DNS Systems. Both of these are separate topics and deserve their own RFC document. The document describes the current best practices implemented in various Passive DNS server implementations.
      </t>
